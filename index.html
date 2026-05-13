@@ -92,139 +92,234 @@
       isRepeat: false,
       config: JSON.parse(localStorage.getItem(PLAYER_STORAGE_KEY)) || {},
       songs: [
-  {
-    name: "Call of Silence",
-    singer: "Singer",
-    path: "assets/music/callofsilence.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Chờ em trong đêm",
-    singer: "Singer",
-    path: "assets/music/choemtrongdem.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Cô dâu của người ta",
-    singer: "Singer",
-    path: "assets/music/codaucuanguoita.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Đổi tình đổi áo",
-    singer: "Singer",
-    path: "assets/music/doitinhdoiao.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Em muốn ta là gì",
-    singer: "Singer",
-    path: "assets/music/emmuontalagi.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Hoa son vàng",
-    singer: "Singer",
-    path: "assets/music/hoasonvang.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Japan",
-    singer: "Singer",
-    path: "assets/music/japan.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Không danh phận",
-    singer: "Singer",
-    path: "assets/music/khongdanhphan.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Lý do là gì",
-    singer: "Singer",
-    path: "assets/music/lydolagi.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Những lời dối gian",
-    singer: "Singer",
-    path: "assets/music/nhungloidoigian.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Sẽ đẹp như giấc mơ",
-    singer: "Singer",
-    path: "assets/music/sedepnhugiacmo.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Thương một người mất tất cả tương lai",
-    singer: "Singer",
-    path: "assets/music/thuong1nguoimattatcatuonglai.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Tránh duyên",
-    singer: "Singer",
-    path: "assets/music/tranhduyen.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Cao ốc 20",
-    singer: "Singer",
-    path: "assets/music/cao-oc-20.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Cao ốc 20 x Sợ ngày mai em đi mất",
-    singer: "Singer",
-    path: "assets/music/cao-oc-20xxx.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Đoạt tuyệt nàng đi",
-    singer: "Singer",
-    path: "assets/music/doan-tuyet-nang-di.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Giấc mơ một cuộc tình",
-    singer: "Singer",
-    path: "assets/music/giac-mo-mot-cuoc-tinh.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Mở lối cho em",
-    singer: "Singer",
-    path: "assets/music/mo-loi-cho-em.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Nắng dưới chân mây",
-    singer: "Singer",
-    path: "assets/music/nang-duoi-chan-may.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Night Of Piano",
-    singer: "Singer",
-    path: "assets/music/night-of-piano.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Tham phú phụ bần",
-    singer: "Singer",
-    path: "assets/music/tham-phu-phu-ban.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-  {
-    name: "Yêu đừng sợ đau",
-    singer: "Singer",
-    path: "assets/music/yeu-dung-so-dau.mp3",
-    image: "assets/img/anh2.jpg"
-  },
-
+        {
+          name: "Call of Silence",
+          singer: "Singer",
+          path: "assets/music/callofsilence.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Cao ốc 20 x Sợ ngày mai em đi mất",
+          singer: "Singer",
+          path: "assets/music/cao-oc-20xxx.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Đoạt tuyệt nàng đi",
+          singer: "Singer",
+          path: "assets/music/doan-tuyet-nang-di.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Giấc mơ một cuộc tình",
+          singer: "Singer",
+          path: "assets/music/giac-mo-mot-cuoc-tinh.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Hoa son vàng",
+          singer: "Singer",
+          path: "assets/music/hoasonvang.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Japan",
+          singer: "Singer",
+          path: "assets/music/japan.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Không danh phận",
+          singer: "Singer",
+          path: "assets/music/khongdanhphan.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Lý do là gì",
+          singer: "Singer",
+          path: "assets/music/lydolagi.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Mở lối cho em",
+          singer: "Singer",
+          path: "assets/music/mo-loi-cho-em.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Nắng dưới chân mây",
+          singer: "Singer",
+          path: "assets/music/nang-duoi-chan-may.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Những lời dối gian",
+          singer: "Singer",
+          path: "assets/music/nhungloidoigian.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Night Of Piano",
+          singer: "Singer",
+          path: "assets/music/night-of-piano.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Sẽ đẹp như giấc mơ",
+          singer: "Singer",
+          path: "assets/music/sedepnhugiacmo.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Tham phú phụ bần",
+          singer: "Singer",
+          path: "assets/music/tham-phu-phu-ban.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Thương một người mất tất cả tương lai",
+          singer: "Singer",
+          path: "assets/music/thuong1nguoimattatcatuonglai.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Tránh duyên",
+          singer: "Singer",
+          path: "assets/music/tranhduyen.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "Yêu đừng sợ đau",
+          singer: "Singer",
+          path: "assets/music/yeu-dung-so-dau.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7415467843929574663",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7415467843929574663.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7482067284169706774",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7482067284169706774.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7577755218906058002",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7577755218906058002.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7600811404953734418",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7600811404953734418.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7610645059947466002",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7610645059947466002.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7611116616037813525",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7611116616037813525.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7612115943396740372",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7612115943396740372.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7615594437615373569",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7615594437615373569.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7619358419723734292",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7619358419723734292.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7622228434168630546",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7622228434168630546.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7622997402550586644",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7622997402550586644.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7632313450563177749",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7632313450563177749.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7632497959816400135",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7632497959816400135.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7634184582165777684",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7634184582165777684.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7634184582165777684 (bản 2)",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7634184582165777684 (1).mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7636396071333235988",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7636396071333235988.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7637119601951689992",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7637119601951689992.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7637395605563673863",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7637395605563673863.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7637787723100589332",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7637787723100589332.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7638239193545690376",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7638239193545690376.mp3",
+          image: "assets/img/anh2.jpg"
+        },
+        {
+          name: "snaptik.vn_7638426459844906261",
+          singer: "Singer",
+          path: "assets/music/snaptik.vn_7638426459844906261.mp3",
+          image: "assets/img/anh2.jpg"
+        }
       ],
       setConfig: function(key, value) {
         this.config[key] = value;
